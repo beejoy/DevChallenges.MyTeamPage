@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-family: Poppins;
+    font-style: normal;
+    font-size: 18px;
+    position: relative;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    position: absolute;
+    left: 243px;
+    top: 109px;
+
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+}
+
+h2 {
+    position: absolute;
+    left: 700px;
+    top: 109px;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 27px;
+}
+.who-we-are {
+    position: absolute;
+    left: 700px;
+    top: 146px;
+    width: 439px;
+}
+
+.wireFrame {
+    position: relative;
+    height: 385px;
+    width: 270px;
+}
+.crew-container {
+    position: absolute;
+    left: 243px;
+    top: 300px;
+    height: 1000px;
+    width: 900px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;;
+}
+.crew-container .lowered-crew {
+    align-self: flex-end;
+}
+.crew-container > div {
+    flex: 0 0 auto;
+}
+.wireFrame > img {
+    height: 341px;
+    width: 238px;
+}
+.wireFrame .crew-name {
+    font-weight: 600;
+
+    position: absolute;
+    top: 350px;
+    left: 0px;
+}
+.wireFrame .crew-designation {
+    position: absolute;
+    left: 165px;
+    top: 80px;
+    width: 175px;
+
+    font-family: 'PT Serif', serif;
+    font-size: 12px;
+    line-height: 16px;
+
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    color: #000000;   
+}
+
+#footer {
+    margin: 70px 0 10px 0;
+    position: absolute;
+    top: 1300px;
+    width: 100%;
+}
+#footer p {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #A9A9A9;
+
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    h1 {
+        top: 0px;
+        left: 10px;
+    }
+    h2 {
+        top: 100px;
+        left: 10px;
+    }
+    p {
+        line-height: 21px;
+    }
+    .who-we-are {
+        position: absolute;
+        left: 10px;
+        /*top: 146px;*/
+        width: 439px;
+    }
+
+    .crew-container {
+        position: absolute;
+        left: 10px;
+        /*top: 300px;*/
+        height: 1500px;
+        width: 600px;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;;
+    
+        /*background: hsla(30, 100%, 50%, 0.8);*/
+    }
+    .crew-container > div:nth-child(3) {
+        align-self: flex-start;
+    }
+    .crew-container > div:nth-child(4) {
+        align-self: flex-end;
+    }
+    .crew-container > div:nth-child(5) {
+        align-self: flex-start;
+    }
+    .crew-container > div:nth-child(6) {
+        align-self: flex-end;
+    }
+    #footer {
+        /*margin: 70px 0 10px 0;
+        position: absolute;*/
+        top: 1850px;
+        /*width: 100%;*/
+    }
+}
